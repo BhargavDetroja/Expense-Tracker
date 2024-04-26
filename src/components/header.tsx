@@ -23,13 +23,14 @@ import {
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ThemeButton } from "./ui/theme-button";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <header className="sticky top-0 flex h-16 items-center gap-4 border-b px-4 md:px-6 justify-between">
       <div className="flex items-center gap-2 text-lg font-semibold md:text-base">
         {/* <Package2 className="h-6 w-6" /> */}
-        <img src="https://i.ibb.co/N6mnD60/image-2022-12-26-T11-55-37-693-Z.png" alt="Logo" className="h-10 w-15" />
+        <Image src="https://i.ibb.co/N6mnD60/image-2022-12-26-T11-55-37-693-Z.png" alt="Logo" className="h-10 w-15" />
         <span className="sr-only">Acme Inc</span>
       </div>
       <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
@@ -79,7 +80,7 @@ const Header = () => {
               className="flex items-center gap-2 text-lg font-semibold"
             >
               {/* <Package2 className="h-6 w-6" /> */}
-              <img src="https://i.ibb.co/N6mnD60/image-2022-12-26-T11-55-37-693-Z.png" alt="Logo" className="h-10 w-15" />
+              <Image src="https://i.ibb.co/N6mnD60/image-2022-12-26-T11-55-37-693-Z.png" alt="Logo" className="h-10 w-15" />
               <span className="sr-only">Acme Inc</span>
             </Link>
             <Link
