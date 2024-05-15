@@ -109,7 +109,7 @@ const AddExp = () => {
   );
 };
 
-function PlusIcon(props) {
+function PlusIcon(props : any) {
   return (
     <svg
       {...props}

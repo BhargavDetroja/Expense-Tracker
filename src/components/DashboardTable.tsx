@@ -54,7 +54,7 @@ const DashboardTable = () => {
   );
 };
 
-function DeleteIcon(props) {
+function DeleteIcon(props : any) {
   return (
     <svg
       {...props}
@@ -75,7 +75,7 @@ function DeleteIcon(props) {
   );
 }
 
-function PlusIcon(props) {
+function PlusIcon(props : any) {
   return (
     <svg
       {...props}
@@ -95,7 +95,7 @@ function PlusIcon(props) {
   );
 }
 
-function Trash2Icon(props) {
+function Trash2Icon(props : any) {
   return (
     <svg
       {...props}
