@@ -28,36 +28,18 @@ export default function Home() {
     <div className="flex min-h-screen w-full flex-col">
       <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-1 bg-[#f3f4f6] dark:bg-[#0f172a] py-8 px-6">
+        <main className="flex-1 py-8 px-6">
           <div className="container mx-auto">
-            <Card className="bg-white dark:bg-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300">
+            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
                 <CardTitle>Settings ⚙️</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="currency">Currency 💱</Label>
-                    <Select
-                      className="bg-white dark:bg-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300"
-                      id="currency"
-                    >
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select currency" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="usd">USD 🇺🇸</SelectItem>
-                        <SelectItem value="eur">EUR 🇪🇺</SelectItem>
-                        <SelectItem value="gbp">GBP 🇬🇧</SelectItem>
-                        <SelectItem value="cad">CAD 🇨🇦</SelectItem>
-                        <SelectItem value="aud">AUD 🇦🇺</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
                     <Label htmlFor="budget">Monthly Budget 💰</Label>
                     <Input
-                      className="bg-white dark:bg-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300"
+                      className="shadow-md hover:shadow-lg transition-shadow duration-300"
                       id="budget"
                       type="number"
                     />
@@ -68,7 +50,7 @@ export default function Home() {
                     </Label>
                     <div className="flex items-center gap-2">
                       <Checkbox
-                        className="bg-white dark:bg-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300"
+                        className="shadow-md hover:shadow-lg transition-shadow duration-300"
                         defaultChecked
                         id="notification"
                       />

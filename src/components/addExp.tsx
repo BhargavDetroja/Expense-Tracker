@@ -24,7 +24,7 @@ const AddExp = () => {
     <Drawer>
       <DrawerTrigger asChild>
         <Button
-          className="fixed bottom-4 right-4 bg-[#4b5563] hover:bg-[#374151] text-white shadow-md hover:shadow-lg transition-shadow duration-300"
+          className="fixed bottom-4 right-4 shadow-md hover:shadow-lg transition-shadow duration-300"
           size="sm"
         >
           <PlusIcon className="mr-2 h-4 w-4" />
@@ -40,7 +40,7 @@ const AddExp = () => {
             <div className="space-y-2">
               <Label htmlFor="date">Date 📅</Label>
               <Input
-                className="bg-white dark:bg-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300"
+                className="shadow-md hover:shadow-lg transition-shadow duration-300"
                 id="date"
                 type="date"
               />
@@ -48,7 +48,7 @@ const AddExp = () => {
             <div className="space-y-2">
               <Label htmlFor="category">Category 🏷️</Label>
               <Select
-                className="bg-white dark:bg-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300"
+                className="shadow-md hover:shadow-lg transition-shadow duration-300"
                 id="category"
               >
                 <SelectTrigger>
@@ -71,7 +71,7 @@ const AddExp = () => {
           <div className="space-y-2">
             <Label htmlFor="amount">Amount 💰</Label>
             <Input
-              className="bg-white dark:bg-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="shadow-md hover:shadow-lg transition-shadow duration-300"
               id="amount"
               type="number"
             />
@@ -79,7 +79,7 @@ const AddExp = () => {
           <div className="space-y-2">
             <Label htmlFor="description">Description 📝</Label>
             <Textarea
-              className="bg-white dark:bg-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="shadow-md hover:shadow-lg transition-shadow duration-300"
               id="description"
               rows={3}
             />
@@ -87,7 +87,7 @@ const AddExp = () => {
           <div className="space-y-2">
             <Label htmlFor="notes">Notes 📋</Label>
             <Textarea
-              className="bg-white dark:bg-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="shadow-md hover:shadow-lg transition-shadow duration-300"
               id="notes"
               rows={3}
             />
@@ -95,12 +95,12 @@ const AddExp = () => {
         </div>
         <DrawerFooter>
           <Button
-            className="mr-2 bg-[#f3f4f6] hover:bg-[#e5e7eb] text-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="mr-2 shadow-md hover:shadow-lg transition-shadow duration-300"
             variant="outline"
           >
             Cancel
           </Button>
-          <Button className="bg-[#4b5563] hover:bg-[#374151] text-white shadow-md hover:shadow-lg transition-shadow duration-300">
+          <Button className="shadow-md hover:shadow-lg transition-shadow duration-300">
             Save
           </Button>
         </DrawerFooter>

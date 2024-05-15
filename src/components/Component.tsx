@@ -14,17 +14,6 @@ import {
   TableBody,
   Table,
 } from "@/components/ui/table";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import {
-  SelectValue,
-  SelectTrigger,
-  SelectItem,
-  SelectContent,
-  Select,
-} from "@/components/ui/select";
-import { Checkbox } from "@/components/ui/checkbox";
-import { RadioGroupItem, RadioGroup } from "@/components/ui/radio-group";
 import AddExp from "./addExp";
 import Header from "./header";
 
@@ -36,20 +25,6 @@ export default function Component() {
         <main className="flex-1 bg-[#f3f4f6] dark:bg-[#0f172a] py-8 px-6">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-              <Card className="bg-white dark:bg-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300">
-                <CardHeader>
-                  <CardTitle>Total Expenses 💸</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="text-4xl font-bold text-[#f58800]">
-                    $2,345.67
-                  </div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">
-                    <span className="font-bold text-[#22c55e]">+5.2%</span>
-                    from last month{"\n                              "}
-                  </div>
-                </CardContent>
-              </Card>
               <Card className="bg-white dark:bg-[#4b5563] shadow-md hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
                   <CardTitle>Expenses This Month 📆</CardTitle>
