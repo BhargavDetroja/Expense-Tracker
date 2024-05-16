@@ -9,6 +9,8 @@ import {
   Table,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
+import { getExpenses } from "@/lib/data";
+const expenses = getExpenses();
 
 const DashboardTable = () => {
   return (
@@ -24,7 +26,7 @@ const DashboardTable = () => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          <TableRow>
+          {/* <TableRow>
             <TableCell>2023-04-15</TableCell>
             <TableCell>Groceries 🍞</TableCell>
             <TableCell>$45.67</TableCell>
@@ -47,14 +49,40 @@ const DashboardTable = () => {
                 Delete
               </Button>
             </TableCell>
-          </TableRow>
+          </TableRow> */}
+          {expenses.map((expense, index) => (
+            <TableRow key={expense.id}>
+              <TableCell>{expense.date}</TableCell>
+              <TableCell>{expense.category}</TableCell>
+              <TableCell>{expense.amount}</TableCell>
+              <TableCell>{expense.description}</TableCell>
+              <TableCell className="flex items-center gap-2">
+                <Button
+                  className="shadow-md hover:shadow-lg transition-shadow duration-300"
+                  size="sm"
+                  variant="outline"
+                >
+                  <DeleteIcon className="mr-2 h-4 w-4" />
+                  Edit
+                </Button>
+                <Button
+                  className="text-[#ef4444] shadow-md hover:shadow-lg transition-shadow duration-300"
+                  size="sm"
+                  variant="outline"
+                >
+                  <Trash2Icon className="mr-2 h-4 w-4" />
+                  Delete
+                </Button>
+              </TableCell>
+            </TableRow>
+          ))}
         </TableBody>
       </Table>
     </Card>
   );
 };
 
-function DeleteIcon(props : any) {
+function DeleteIcon(props: any) {
   return (
     <svg
       {...props}
@@ -75,7 +103,7 @@ function DeleteIcon(props : any) {
   );
 }
 
-function PlusIcon(props : any) {
+function PlusIcon(props: any) {
   return (
     <svg
       {...props}
@@ -95,7 +123,7 @@ function PlusIcon(props : any) {
   );
 }
 
-function Trash2Icon(props : any) {
+function Trash2Icon(props: any) {
   return (
     <svg
       {...props}
